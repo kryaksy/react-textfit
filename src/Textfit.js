@@ -55,7 +55,7 @@ export default class TextFit extends React.Component {
         ready: false
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.handleWindowResize = throttle(this.handleWindowResize, this.props.throttle);
     }
 
